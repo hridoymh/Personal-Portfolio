@@ -8,6 +8,7 @@ import Contacts from '../pages/Contacts'
 import Admin from '../pages/Admin'
 import Login from '../components/Login'
 import Dash from '../components/Dash'
+import ProjectsList from '../components/admin/ProjectsList'
 
 const Router = createBrowserRouter([
     {
@@ -44,6 +45,10 @@ const Router = createBrowserRouter([
             {
                 path:'login',
                 element:<Login/>
+            },
+            {
+                path:'projects',
+                element:<ProjectsList/>
             }
         ]
     }
